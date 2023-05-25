@@ -29,8 +29,8 @@ cp -r lib grading-area
 cp TestListExamples.java grading-area
 cp student-submission/ListExamples.java grading-area
 
-cd grading-area
-javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java 2> error.txt
+#cd grading-area
+javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar"grading-area/ *.java 2> error.txt
 if [[ $? -ne 0 ]]
 then   
     echo 'Not compiled'
